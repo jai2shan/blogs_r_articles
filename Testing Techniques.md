@@ -1,5 +1,14 @@
-<h2 style="text-align:center"> Testing Techniques </h2>
+**<h2 style="text-align:center"> Testing Techniques </h2>**
 
+## Why developers needs to do **testing**?
+
+Humans are prone to mistakes, we all make mistakes. Mistakes can be expensive sometimes, unimportant sometimes and sometimes may be too expensive. Cost varies from the domain to domain. Most importantly, bugs/defects can cause a very bad user experience, which can lead to losing a client.   
+
+Whatever we develop needs to be checked/**tested** before we deliver to the client. Ensuring the application/code is usable before delivering to client is crucial in customer satisfaction. In fact a developer's efficiency in a year/over a period of time can be validated by looking into no of bugs and user stories  developed/worked during that period.
+
+Being an analytics team, there is limited scope for testing as long as we are working on generating markdown files and sharing results in the form of excels. As long as we are writing code there will be a way to test the code. Writing unit test cases can increase the efficiency, saves time and effort.
+
+Lets discuss about some basic testing techniques, that can help us test our code deployments quickly.
 
 ### 1) Orthogonal array Testing
 * Orthogonal array testing is a black box testing technique that is a systematic, statistical way of software testing.    
@@ -154,5 +163,16 @@ Example :
 
 ### 4) Unit testing
 
-Writing Tests vs. Writing Code
+* Unit test basically is small functions that test and help to write robust code. 
+* Robust code means a code    
+                        1) which will not break easily upon changes,  
+                        2) can be refactored simply,    
+                        3) can be extended without breaking the rest, and    
+                        4) can be tested with ease.    
+
+<table><tbody><tr><td><h2 style="text-align:center">Argument</h2></td><td><h2 style="text-align:center">Expectations</h2></td></tr><tr><td>expect_lt(), expect_lte(), expect_gt(), expect_gte()</td><td>Is returned value less or greater than specified value?</td></tr><tr><td>expect_equal(), expect_identical()</td><td>Is an object equal to a reference value?</td></tr><tr><td><p>expect_error(), expect_warning(), expect_message(),&nbsp;<p>expect_condition()</p></td><td>Does code throw an error, warning, message, or other condition?</td></tr><tr><td>expect_invisible(), expect_visible()</td><td>Does expression return visibly or invisibly?</td></tr><tr><td><p>skip(), skip_if_not(), skip_if(), skip_if_not_installed(), skip_if_offline(), skip_on_cran(), skip_on_os(), skip_on_travis(), skip_on_appveyor(),&nbsp;</p><p>skip_on_ci(), skip_on_covr(), skip_on_bioc(), skip_if_translated()</p></td><td>Skip a test.</td></tr><tr><td>expect_length()</td><td>Does a vector have the specified length?</td></tr><tr><td>expect_match()</td><td>Does string match a regular expression?</td></tr><tr><td>expect_named()</td><td>Does object have names?</td></tr><tr><td>expect_setequal(), expect_mapequal()</td><td>Do two vectors contain the same values?</td></tr><tr><td>expect_output()</td><td>Does code print output to the console?</td></tr><tr><td>expect_reference()</td><td>Do two names point to the same underlying object?</td></tr><tr><td><p>expect_snapshot_output(), expect_snapshot_value(),</p><p>expect_snapshot_error(), expect_snapshot_condition()</p></td><td>Snapshot testing.</td></tr><tr><td>expect_vector()</td><td>Does the object have vector properties?</td></tr><tr><td>expect_silent()</td><td>Is the code silent?</td></tr><tr><td>expect_type(), expect_s3_class(), expect_s4_class()</td><td>Does the object inherit from a S3 or S4 class, or is it a base type?</td></tr><tr><td>expect_true(), expect_false()</td><td>Is the object true/false?</td></tr><tr><td>verify_output()</td><td>Verify output</td></tr></tbody></table>     
+
+**Source : https://www.geeksforgeeks.org/unit-testing-in-r-programming//**
+
+Writing Tests vs. Writing Code    
 **Source : https://www.makeuseof.com/testing-methods-developers-should-know/**
