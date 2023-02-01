@@ -10,7 +10,7 @@ Being an analytics team, there is limited scope for testing as long as we are wo
 
 Lets discuss about some basic testing techniques, that can help us test our code deployments quickly.
 
-### 1) Orthogonal array Testing
+## 1) Orthogonal array Testing
 * Orthogonal array testing is a black box testing technique that is a systematic, statistical way of software testing.    
 * It is used when the number of inputs to the system is relatively small, but too large to allow for exhaustive testing of every possible input to the systems
 
@@ -121,15 +121,21 @@ Total Possible combinations for testing
 </td></tr></tbody><tfoot></tfoot></table>
 </center>
 
+```
+If we have 3 parameters, each can have 3 values then the possible Number of tests using conventional method is 3^3 = 27. While the same using OAT, it boils down to 9 test cases.
+```
+
 **Source :**  
 **https://en.wikipedia.org/wiki/Orthogonal_array_testing**   
 **https://en.wikipedia.org/wiki/All-pairs_testing**  
 
-### 2) Boundary Value Testing
+## 2) Boundary Value Testing
 Boundary value testing is the process of testing between extreme ends or boundaries between partitions of the input values.  
 * So these extreme ends like Start- End, Lower- Upper, Maximum-Minimum, Just Inside-Just Outside values are called boundary values and the testing is called “boundary testing”.
 
-![Boundary Value Testing](./images/testing_techniques/boundary_value_testing.png)
+<p align="center">
+  <img src="./images/testing_techniques/boundary_value_testing.png" />
+</p>
 
 * The basic idea in normal boundary value testing is to select input variable values at their:  
         1) Minimum   
@@ -138,7 +144,7 @@ Boundary value testing is the process of testing between extreme ends or boundar
         4) Just below the maximum   
         5) Maximum  
 
-### 2.1) Equivalence Partitioning
+## 2.1) Equivalence Partitioning
 In this technique, input data units are divided into equivalent partitions that can be used to derive test cases which reduces time required for testing because of small number of test cases.    
 
 Example 1: Equivalence and Boundary Value
@@ -153,7 +159,7 @@ Here is the test condition
 4) Any 3 Digit Number say -100 is invalid.          
 
 **Source : https://www.guru99.com/equivalence-partitioning-boundary-value-analysis.html**
-### 3) Integration Testing
+## 3) Integration Testing
 Integration testing -- also known as integration and testing (I&T) -- is a type of software testing in which the different units, modules or components of a software application are tested as a combined entity.
 
 Example : 
@@ -161,7 +167,7 @@ Example :
 > Should test scearios, of how data is saving  
 2) Accessing data from API and displaying them in application
 
-### 4) Unit testing
+## 4) Unit testing
 
 * Unit test basically is small functions that test and help to write robust code. 
 * Robust code means a code    
@@ -170,9 +176,12 @@ Example :
                         3) can be extended without breaking the rest, and    
                         4) can be tested with ease.    
 
+<center>
 <table><tbody><tr><td><h2 style="text-align:center">Argument</h2></td><td><h2 style="text-align:center">Expectations</h2></td></tr><tr><td>expect_lt(), expect_lte(), expect_gt(), expect_gte()</td><td>Is returned value less or greater than specified value?</td></tr><tr><td>expect_equal(), expect_identical()</td><td>Is an object equal to a reference value?</td></tr><tr><td><p>expect_error(), expect_warning(), expect_message(),&nbsp;<p>expect_condition()</p></td><td>Does code throw an error, warning, message, or other condition?</td></tr><tr><td>expect_invisible(), expect_visible()</td><td>Does expression return visibly or invisibly?</td></tr><tr><td><p>skip(), skip_if_not(), skip_if(), skip_if_not_installed(), skip_if_offline(), skip_on_cran(), skip_on_os(), skip_on_travis(), skip_on_appveyor(),&nbsp;</p><p>skip_on_ci(), skip_on_covr(), skip_on_bioc(), skip_if_translated()</p></td><td>Skip a test.</td></tr><tr><td>expect_length()</td><td>Does a vector have the specified length?</td></tr><tr><td>expect_match()</td><td>Does string match a regular expression?</td></tr><tr><td>expect_named()</td><td>Does object have names?</td></tr><tr><td>expect_setequal(), expect_mapequal()</td><td>Do two vectors contain the same values?</td></tr><tr><td>expect_output()</td><td>Does code print output to the console?</td></tr><tr><td>expect_reference()</td><td>Do two names point to the same underlying object?</td></tr><tr><td><p>expect_snapshot_output(), expect_snapshot_value(),</p><p>expect_snapshot_error(), expect_snapshot_condition()</p></td><td>Snapshot testing.</td></tr><tr><td>expect_vector()</td><td>Does the object have vector properties?</td></tr><tr><td>expect_silent()</td><td>Is the code silent?</td></tr><tr><td>expect_type(), expect_s3_class(), expect_s4_class()</td><td>Does the object inherit from a S3 or S4 class, or is it a base type?</td></tr><tr><td>expect_true(), expect_false()</td><td>Is the object true/false?</td></tr><tr><td>verify_output()</td><td>Verify output</td></tr></tbody></table>     
+</center>
 
 **Source : https://www.geeksforgeeks.org/unit-testing-in-r-programming//**
 
-Writing Tests vs. Writing Code    
+*Writing Tests vs. Writing Code*:    
+While all these tests are essential, finding a balance that works for you is important. Otherwise, you’ll spend too much time writing tests instead of code.    
 **Source : https://www.makeuseof.com/testing-methods-developers-should-know/**
