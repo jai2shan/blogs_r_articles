@@ -1,6 +1,6 @@
 **<h2 style="text-align:center"> Testing Techniques </h2>**
 
-## Why developers needs to do **testing**?
+### Why developers needs to do **testing**?
 
 Humans are prone to mistakes, we all make mistakes. Mistakes can be expensive sometimes, unimportant sometimes and sometimes may be too expensive. Cost varies from the domain to domain. Most importantly, bugs/defects can cause a very bad user experience, which can lead to losing a client.   
 
@@ -10,7 +10,7 @@ Being an analytics team, there is limited scope for testing as long as we are wo
 
 Lets discuss about some basic testing techniques, that can help us test our code deployments quickly.
 
-## 1) Orthogonal array Testing
+### 1) Orthogonal array Testing
 * Orthogonal array testing is a black box testing technique that is a systematic, statistical way of software testing.    
 * It is used when the number of inputs to the system is relatively small, but too large to allow for exhaustive testing of every possible input to the systems
 
@@ -128,8 +128,9 @@ If we have 3 parameters, each can have 3 values then the possible Number of test
 **Source :**  
 **https://en.wikipedia.org/wiki/Orthogonal_array_testing**   
 **https://en.wikipedia.org/wiki/All-pairs_testing**  
+**https://azevedorafaela.com/tag/orthogonal-array-test-examples/**
 
-## 2) Boundary Value Testing
+### 2) Boundary Value Testing
 Boundary value testing is the process of testing between extreme ends or boundaries between partitions of the input values.  
 * So these extreme ends like Start- End, Lower- Upper, Maximum-Minimum, Just Inside-Just Outside values are called boundary values and the testing is called “boundary testing”.
 
@@ -144,7 +145,7 @@ Boundary value testing is the process of testing between extreme ends or boundar
         4) Just below the maximum   
         5) Maximum  
 
-## 2.1) Equivalence Partitioning
+### 2.1) Equivalence Partitioning
 In this technique, input data units are divided into equivalent partitions that can be used to derive test cases which reduces time required for testing because of small number of test cases.    
 
 Example 1: Equivalence and Boundary Value
@@ -159,7 +160,7 @@ Here is the test condition
 4) Any 3 Digit Number say -100 is invalid.          
 
 **Source : https://www.guru99.com/equivalence-partitioning-boundary-value-analysis.html**
-## 3) Integration Testing
+### 3) Integration Testing
 Integration testing -- also known as integration and testing (I&T) -- is a type of software testing in which the different units, modules or components of a software application are tested as a combined entity.
 
 Example : 
@@ -167,7 +168,7 @@ Example :
 > Should test scearios, of how data is saving  
 2) Accessing data from API and displaying them in application
 
-## 4) Unit testing
+### 4) Unit testing
 
 * Unit test basically is small functions that test and help to write robust code. 
 * Robust code means a code    
