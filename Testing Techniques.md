@@ -2,7 +2,7 @@
 
 ### Why developers needs to do **testing**?
 
-Humans are prone to mistakes, we all make mistakes. Mistakes can be expensive sometimes. Most importantly, bugs/defects can cause a very bad user experience, which can lead to losing a client.   
+We all make mistakes, they can be expensive sometimes. Most importantly, bugs/defects can cause a very bad user experience, which can lead to losing a client.   
 
 Whatever we develop needs to be **tested** before we deliver to the client. Ensuring the application/code is usable before delivering to client is crucial in customer satisfaction. In fact a developer's efficiency in a year/over a period of time can be validated by looking into no of bugs they had and user stories  developed during that period.
 
