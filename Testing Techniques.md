@@ -6,7 +6,7 @@ Humans are prone to mistakes, we all make mistakes. Mistakes can be expensive so
 
 Whatever we develop needs to be **tested** before we deliver to the client. Ensuring the application/code is usable before delivering to client is crucial in customer satisfaction. In fact a developer's efficiency in a year/over a period of time can be validated by looking into no of bugs they had and user stories  developed during that period.
 
-Being an analytics team, there is limited scope for testing as long as we are working on generating markdown files and sharing results in the form of excels. As long as we are writing code there will be a way to test the code. Writing unit test cases can increase the efficiency, saves time and effort.
+Being an analytics team, there is limited scope for testing as we generate markdown files or share results in the form of excels. As long as we are writing code there will always be a way to test the code. Writing unit test cases can increase the efficiency, saves time and effort.
 
 Lets discuss about some basic testing techniques, that can help us test our code deployments quickly.
 
