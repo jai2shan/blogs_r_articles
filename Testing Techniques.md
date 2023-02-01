@@ -4,11 +4,15 @@
 
 We all make mistakes, they can be expensive sometimes. Most importantly, bugs/defects can cause a very bad user experience, which can lead to losing a client.   
 
-Whatever we develop needs to be **tested** before we deliver to the client. Ensuring the application/code is usable before delivering to client is crucial in customer satisfaction. In fact a developer's efficiency in a year/over a period of time can be validated by looking into no of bugs they had and user stories  developed during that period.
+Whatever we develop needs to be **tested** before we deliver to the client. Ensuring the application/code is usable before delivering to client is crucial for customer satisfaction. In fact a developer's efficiency in a year/over a period of time can be validated by looking into no of bugs they had and user stories  developed during that period.
 
 Being an analytics team, there is limited scope for testing as we generate markdown files or share results in the form of excels. As long as we are writing code there will always be a way to test the code. Writing unit test cases can increase the efficiency, saves time and effort.
 
 Lets discuss about some basic testing techniques, that can help us test our code deployments quickly.
+
+```
+If we have 3 parameters, each can have 3 values then the possible Number of tests using conventional method is 3^3 = 27. While the same using OAT, it boils down to 9 test cases. Testing all possible values is called Pairwise testing. This is not feasible for anyone to do when there will be so many options.
+```
 
 ### 1) Orthogonal array Testing
 * Orthogonal array testing is a black box testing technique that is a systematic, statistical way of software testing.    
@@ -121,9 +125,6 @@ Total Possible combinations for testing
 </td></tr></tbody><tfoot></tfoot></table>
 </center>
 
-```
-If we have 3 parameters, each can have 3 values then the possible Number of tests using conventional method is 3^3 = 27. While the same using OAT, it boils down to 9 test cases.
-```
 
 **Source :**  
 **https://en.wikipedia.org/wiki/Orthogonal_array_testing**   
@@ -182,3 +183,7 @@ Example :
 
 **Source : https://www.geeksforgeeks.org/unit-testing-in-r-programming//**    
 **Source : https://www.makeuseof.com/testing-methods-developers-should-know/**
+
+
+## Writing Unit test cases in R
+**https://r-pkgs.org/testing-basics.html**
